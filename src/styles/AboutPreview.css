@@ -1,0 +1,40 @@
+
+
+.about-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.text-side {
+    flex:1;
+    flex-basis: 45%;
+    min-width: 350px;
+}
+
+.main-text {
+    font-weight:bold;
+    overflow-wrap: break-word;
+}
+
+.body-text {
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+.img-container {
+    flex: 1;
+    flex-basis: 50%;
+    
+}
+
+.pccm-pic {
+    width: 100%;
+}
+
+.button-1 {
+    margin-top: 20px;
+}

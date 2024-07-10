@@ -1,0 +1,54 @@
+.sml-logo {
+    width: 50px;
+}
+
+
+nav {
+    font-size: 16px;
+    padding: 30px;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar {
+    
+    background: linear-gradient(0.25turn, #ca8f18, var(--primarycolour));
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:visited {
+    color: inherit;
+}
+
+.navbar a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar a:active {
+    color: white;
+}
+
+.navbar a:hover {
+    color: var(--offwhite);
+}
