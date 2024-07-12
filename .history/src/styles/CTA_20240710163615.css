@@ -1,0 +1,84 @@
+.call-to-action {
+    background: var(--primarycolour);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow:visible;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 0;
+}
+
+.cta-image {
+    margin-top: -100px;
+    width: 500px;
+}
+
+.cta-img-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.cta-title {
+    font-weight: 500;
+}
+
+.cta-description {
+    flex: 1;
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.cta-description-contents {
+    max-width: 550px;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cta-buttons .button-1 {
+    margin-right: 15px;
+}
+
+.custom-divider {
+    outline: red 2px solid;
+   
+    background:url(".././assets/bottomwave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    
+    overflow: visible;
+}
+
+@media screen and (max-width: 1071px) {
+
+    .cta-image {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .call-to-action {
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .cta-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

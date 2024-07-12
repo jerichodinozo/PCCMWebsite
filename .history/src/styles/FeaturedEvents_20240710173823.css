@@ -1,0 +1,43 @@
+.featured-events {
+    justify-content: center;
+}
+.carousel-events {
+    display: none;
+}
+
+.events-section {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space;
+    gap: 50px;
+    
+}
+
+.events-view-more:hover {
+    color:var(--secondarycolour);
+}
+
+@media screen and (max-width: 710px) {
+    .carousel-events {
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding-bottom: 30px;
+    }
+
+    .events-section {
+        display: none;
+    }
+    
+    .embla-events-container {
+        width: 100vw;
+        display: flex;
+        gap: 15px;
+    }
+
+}
+
+
+    

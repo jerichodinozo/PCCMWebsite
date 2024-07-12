@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+
+.button-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.button {
+    border: solid var(--tertiarycolour) 2px;
+    background: var(--tertiarycolour);
+    color: white;
+    width: 150px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:1050px) { 
+    nav li {
+        display: none;
+    }
+
+    nav .logo-side {
+       display: block;
+       padding-right: 0px;
+       
+    }
+}
+
+

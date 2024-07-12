@@ -1,0 +1,147 @@
+.sml-logo {
+    width: 50px;
+}
+
+
+nav {
+    font-size: 16px;
+    padding: 30px;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar {
+    
+    background: linear-gradient(0.25turn, #ca8f18, var(--primarycolour));
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar li {
+    color:var(--offblack);
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:visited {
+    color: inherit;
+}
+
+.navbar a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar a:active {
+    color: white;
+}
+
+.navbar a:hover {
+    color: var(--offwhite);
+}
+
+#outer-container {
+   
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+.bm-burger-button {
+    position: relative;
+    width: 36px;
+    height: 30px;
+    
+    
+  }
+
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    position: fixed
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: var(--tertiarycolour);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  #nav-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media screen and (max-width:1220px) { 
+    nav li {
+        display: none;
+    }
+
+    nav .logo-side {
+       display: block;
+       padding-right: 0px;
+       
+    }
+
+    #outer-container {
+        display: flex;
+    }
+}
