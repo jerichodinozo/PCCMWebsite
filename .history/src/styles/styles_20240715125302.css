@@ -1,0 +1,253 @@
+* {
+    /* outline: 1px solid #f00 !important;  */
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+:root {
+    --primarycolour: #F4AD1B;
+    --secondarycolour: #E7563E;
+    --tertiarycolour: #224E80;
+    --offwhite: #f9f9f9;
+    --offblack: #323638;
+    --primary-font-size: 60px;
+    --body-text-size: 20px;
+}
+
+.view-more-redhover:hover {
+    color: var(--secondarycolour);
+}
+
+@media screen and (min-width: 330px) {
+
+    /*Hero title*/
+    h1 {
+        font-size: 48px;
+    }
+
+    /*Section title*/
+    h2 {
+        font-size: 36px;
+    }
+
+    /*Card titles*/
+    h3 {
+        font-size: 18px;
+    }
+
+    /*footer labels, navbar, links*/
+    a {
+        font-size: 16px;
+    }
+
+    /*body text*/
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 574px) {
+
+    /*Hero title*/
+    h1 {
+        font-size: 60px;
+    }
+
+    /*Section title*/
+    h2 {
+        font-size: 48px;
+    }
+
+    /*Card titles*/
+    h3 {
+        font-size: 20px;
+    }
+
+    /*footer labels, navbar, links*/
+    a {
+        font-size: 20px;
+    }
+
+    /*body text*/
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    /*Hero title*/
+    h1 {
+        font-size: 60px;
+    }
+
+    /*Section title*/
+    h2 {
+        font-size: 48px;
+    }
+
+    /*Card titles*/
+    h3 {
+        font-size: 24px;
+    }
+
+    /*footer labels, navbar, links*/
+    a {
+        font-size: 20px;
+    }
+
+    /*body text*/
+    p {
+        font-size: 20px;
+    }
+}
+
+.modal-image {
+    width: 430px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    min-width: 0;
+}
+
+.modal-image-container {}
+
+.section-title {
+    font-weight: 500;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: var(--offblack);
+}
+
+.primaryfont {
+    font-size: var(--primary-font-size);
+}
+
+.body-text {
+    font-size: var(--body-text-size);
+}
+
+.button-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.shadow2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.button-1 {
+    border: solid var(--tertiarycolour) 2px;
+    background: var(--tertiarycolour);
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.button-1:hover {
+    border: solid var(--tertiarycolour) 2px;
+    background: transparent;
+    color: var(--tertiarycolour);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.button-2 {
+    border: solid var(--secondarycolour) 2px;
+    background: var(--secondarycolour);
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.button-2:hover {
+    border: solid var(--secondarycolour) 2px;
+    background: transparent;
+    color: var(--secondarycolour);
+    cursor: pointer;
+}
+ 
+/*buttons*/
+.button {
+    font-size: 18px;
+}
+
+.btn:hover .btn-slide-show-text1 {
+    margin-left: 65px;
+}
+
+.btn-shadow {
+    display: inline-block;
+    margin: 5px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    background: none;
+    outline: currentcolor;
+    border: medium;
+}
+
+.btn-shadow::before {
+    content: "";
+    height: 40px;
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    right: 10px;
+    z-index: 0;
+    border-radius: 2em;
+    filter: blur(14px) brightness(0.9);
+}
+
+.btn-shadow span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+    padding: 16px 60px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+}
+
+.btn-shadow:hover {
+    color: rgb(255, 255, 255);
+}
+
+.btn-shadow:hover span {
+    filter: brightness(0.9) contrast(1.2);
+    transform: scale(0.96);
+}
+
+.btn-shadow:hover::before {
+    bottom: 8px;
+    filter: blur(6px) brightness(0.8);
+    left: 15px;
+    right: 15px;
+}
+
+.btn-shadow--blue span {
+    background: var(--tertiarycolour);
+}
